@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reader's Nook</title>
+  <link rel="stylesheet" href="../styles/salesSummary.css">
+  <link rel="icon" href="../images/logo.svg">
+</head>
+
+<body>
+  <div class="background">
+
+    <div class="sales-summary-container">
+      <!-- Optional Logo -->
+      <div class="logo-container">
+        <!-- Replace with your logo if needed -->
+        <img src="../images/logo.svg" alt="Logo" class="logo" />
+      </div>
+      <div class="header-row">
+        <div class="back-btn">&#8592;</div>
+        <div class="title">SALES SUMMARY</div>
+        <div class="dropdown-container">
+            <label for="sortDropdown">Sort by:</label>
+            <select id="sortDropdown">
+              <option value="day">Day</option>
+              <option value="month">Month</option>
+              <option value="year">Year</option>
+            </select>
+          </div>
+          
+          <div id="output"></div>
+      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>No. of Sales</th>
+              <th>Total Sales</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5/7/2025</td>
+              <td>2</td>
+              <td>PHP 400.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="paymentPopup" class="popup">
+    <div class="popup-content">
+      <h2><strong>Payment</strong></h2>
+      <div class="payment-summary"><p>No. of Items: <strong id="item-total">2</strong></p></div>
+      <div class="payment-summary"><p>Total: <strong id="payment-total">Php 400.00</strong></p></div>
+
+      <input type="text" placeholder="Enter Cash Tendered" class="input-field"> <!-- disable this if amount insufficient --> 
+
+      <div class="warning" style="display: none;">Cash Tendered is insufficient.</div>
+
+      <button class="btn-proceed">Proceed</button>
+      <button class="btn-cancel" onclick="hidePopup()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="../scripts/customercheckout.js"></script>
+</body>
+
+</html>
