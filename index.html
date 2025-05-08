@@ -17,9 +17,11 @@
 
     <div class="right">
       <div class="login-box">
-        <input type="text" placeholder="User ID" required>
-        <input type="password" placeholder="Password" required>
-        <button>Log In</button>
+        <form action="php/login.php" method="POST">
+          <input type="text" name="username" placeholder="User ID" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Log In</button>
+      </form>
         <p class="error">Incorrect User ID or Password.</p>
       </div>
     </div>
