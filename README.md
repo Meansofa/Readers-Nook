@@ -79,8 +79,8 @@ The Sales and Inventory Management System for Reader’s Nook will cover the fol
 <br>after that create a config.php file inside php folder
 <br>and type this code inside config.php:
 <br>
-  <pre> //php 
-    <br>&lt;?php 
+  <pre>
+    &lt;?php 
     $servername = "localhost";
     $username = "root";
     $password = "";
