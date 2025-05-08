@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Customer Checkout</title>
-  <link rel="stylesheet" href="../styles/customercheckout.css">
+  <title>Reader's Nook</title>
+  <link rel="stylesheet" href="../styles/salesSummary.css">
+  <link rel="icon" href="../images/logo.svg">
 </head>
 
 <body>
   <div class="background">
-    <div class="checkout-container">
+
+    <div class="sales-summary-container">
       <!-- Optional Logo -->
       <div class="logo-container">
         <!-- Replace with your logo if needed -->
@@ -17,48 +19,38 @@
       </div>
       <div class="header-row">
         <div class="back-btn">&#8592;</div>
-        <div class="title">CUSTOMER CHECKOUT</div>
-        <button class="proceed-btn" onclick="showPopup()">Proceed to Payment</button>
+        <div class="title">SALES SUMMARY</div>
+        <div class="dropdown-container">
+            <label for="sortDropdown">Sort by:</label>
+            <select id="sortDropdown">
+              <option value="day">Day</option>
+              <option value="month">Month</option>
+              <option value="year">Year</option>
+            </select>
+          </div>
+          
+          <div id="output"></div>
       </div>
       <div class="table-container">
         <table>
           <thead>
             <tr>
-              <th>Book Name</th>
-              <th>ISBN</th>
-              <th>Qty</th>
-              <th>Price</th>
-              <th>Total</th>
-              <th>Actions</th>
+              <th>Date</th>
+              <th>No. of Sales</th>
+              <th>Total Sales</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Harry Potter</td>
-              <td>123456</td>
+              <td>5/7/2025</td>
               <td>2</td>
-              <td>200</td>
-              <td>400</td>
-              <td class="actions">
-                <button class="edit-btn">Edit</button>
-                <button class="remove-btn">Remove</button>
-              </td>
+              <td>PHP 400.00</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div class="summary">
-        <div>No. of Items: 1</div>
-        <div>Total Amount: Php 400.00</div>
-      </div>
-      <div class="add-section">
-        <input type="text" placeholder="Enter ISBN">
-        <button class="minus-btn" id="minus-btn">-</button>
-        <input type="number" value="1" min="1" class="qty-input" id="qty-input">
-        <button class="plus-btn" id="plus-btn">+</button>
-        <button class="add-btn">Add</button>
-      </div>
     </div>
+
   </div>
 
   <div id="paymentPopup" class="popup">
@@ -76,7 +68,7 @@
     </div>
   </div>
 
-  <script src="scripts/customercheckout.js"></script>
+  <script src="../scripts/customercheckout.js"></script>
 </body>
 
 </html>
