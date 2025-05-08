@@ -78,14 +78,14 @@ The Sales and Inventory Management System for Reader’s Nook will cover the fol
 <br>To use the login page, you need to import login.sql to phpmyadmin or mysql
 <br>after that create a config.php file inside php folder
 <br>and type this code inside config.php:
-<br><?php
+<br><pre> ```php <?php
 <br>
 <br>$servername = "localhost";
 <br>$username = "root";
 <br>$password = "";
 <br>$dbname = "login";
 <br>
-<br>?>  
+<br>?>  </pre>
 <br>if you have a password in your schema, insert the password
 <br>
 <br>Now try opening http://localhost/readers-nook, make sure apache and sql is running
