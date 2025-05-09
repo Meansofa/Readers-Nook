@@ -13,7 +13,7 @@ echo "Connected successfully<br>";
 $username = $_POST['username'] ?? '';
 $password = $_POST['password'] ?? '';
 
-// Escape input to prevent SQL injection
+// Escape input(only receives input from keyboard) to prevent SQL injection
 $username = $conn->real_escape_string($username);
 $password = $conn->real_escape_string($password);
 
