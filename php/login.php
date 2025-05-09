@@ -10,8 +10,8 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully<br>";
 
-$username = $_POST['username'] ?? 'russel';
-$password = $_POST['password'] ?? 'gwapa';
+$username = $_POST['username'] ?? '';
+$password = $_POST['password'] ?? '';
 
 // Escape input to prevent SQL injection
 $username = $conn->real_escape_string($username);
