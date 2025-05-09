@@ -36,6 +36,19 @@
     height: auto; 
   }
   
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+  }
   
   .left h1 {
     font-size: 32px;
@@ -85,6 +98,10 @@
   
   .login-box button:hover {
     background-color: #27548A;
+  }
+
+  .login-box h2 {
+    color: #102E50;
   }
   
   .error {
