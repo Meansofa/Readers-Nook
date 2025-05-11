@@ -1,204 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/deliveryorder.css">
-</head>
+    <link rel="stylesheet" href="styles/deliveryorder.css" />
+  </head>
 
-<body>
+  <body>
     <div class="main-container">
-        <div class="logo-container">
-            <img src="img/logo.png" alt="Readers Nook Logo" class="logo">
+      <div class="logo-container">
+        <img src="img/logo.png" alt="Readers Nook Logo" class="logo" />
+      </div>
+      <div class="upper-part">
+        <button class="back-btn">&#8592;</button>
+        <h1 class="delivery-header">DELIVERY ORDER</h1>
+        <button class="proceed-btn">PROCEED ORDER</button>
+      </div>
+      <div class="inventory-table">
+        <div class="scroll-table">
+          <table>
+            <thead>
+              <tr class="rounded-row">
+                <th>Book Name</th>
+                <th>ISBN</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="order-items">
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter</td>
+                <td>123456</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="upper-part">
-            <button class="back-btn">&#8592;</button>
-            <h1 class="delivery-header">DELIVERY ORDER</h1>
-            <button class="proceed-btn">PROCEED ORDER</button>
+        <div class="item-summary">
+          <div style="display: flex; align-items: center">
+            <h3>No. of Items:</h3>
+            <p style="flex: 1">&nbsp;N</p>
+          </div>
+          <div style="display: flex; align-items: center">
+            <h3>Total Amount:</h3>
+            <p style="flex: 1">&nbsp;N</p>
+          </div>
         </div>
-        <div class="inventory-table">
-            <div class="scroll-table">
-                <table>
-                    <thead>
-                        <tr class="rounded-row">
-                            <th>Book Name</th>
-                            <th>ISBN</th>
-                            <th>Qty</th>
-                            <th>Price</th>
-                            <th>Total</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody id="order-items">
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Harry Potter</td>
-                            <td>123456</td>
-                            <td>2</td>
-                            <td>200</td>
-                            <td>400</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="remove-btn">Remove</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="item-summary">
-                <div style="display: flex; align-items: center;">
-                    <h3>No. of Items:</h3>
-                    <p style="flex: 1"> &nbsp;N</p>
-                </div>
-                <div style="display: flex; align-items: center;">
-                    <h3>Total Amount:</h3>
-                    <p style="flex: 1"> &nbsp;N</p>
-                </div>
-            </div>
+      </div>
+      <div class="bottom-part">
+        <div class="add-section">
+          <input
+            type="text"
+            placeholder="Enter ISBN or Book Title"
+            style="width: 400px"
+          />
+          <div>
+            <button class="minus-btn" id="minus-btn">-</button>
+            <input
+              type="number"
+              value="1"
+              min="1"
+              class="qty-input"
+              id="qty-input"
+              style="width: 70px"
+            />
+            <button class="plus-btn" id="plus-btn">+</button>
+          </div>
+          <button class="add-btn">Add</button>
         </div>
-        <div class="bottom-part">
-            <div class="add-section">
-                <input type="text" placeholder="Enter ISBN" style="width: 400px;">
-                <div>
-                    <button class="minus-btn" id="minus-btn">-</button>
-                    <input type="number" value="1" min="1" class="qty-input" id="qty-input" style="width: 70px;">
-                    <button class="plus-btn" id="plus-btn">+</button>
-                </div>
-                <button class="add-btn">Add</button>
-            </div>
-            <div class="supplier">
-                <select name="supplier" class="supplier">
-                    <option value="volvo">Supplier #1</option>
-                    <option value="saab">Supplier #2</option>
-                    <option value="mercedes">Supplier #3</option>
-                    <option value="audi">Supplier #4</option>
-                </select>
-            </div>
+        <div class="supplier">
+          <select name="supplier" class="supplier">
+            <option value="volvo">Supplier #1</option>
+            <option value="saab">Supplier #2</option>
+            <option value="mercedes">Supplier #3</option>
+            <option value="audi">Supplier #4</option>
+          </select>
         </div>
+      </div>
     </div>
-</body>
-
-
+  </body>
 </html>

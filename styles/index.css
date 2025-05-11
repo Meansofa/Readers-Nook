@@ -43,12 +43,12 @@
     justify-content: center;
   }
 
-  .top h1 {
-    font-size: 40px;
+  /* .top h1 {
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
     color: white;
-  }
+  } */
   
   .left h1 {
     font-size: 32px;
@@ -66,18 +66,28 @@
     align-items: center;
     justify-content: center;
   }
+
   
   .login-box {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     color: black;
     text-align: center;
+    margin: 20px;
+    /* border: red solid; */
+  }
+
+  .login-box label{
+    font-size: small;
+    display: flex;
+    flex: 1;
+    margin-bottom: -10px;
   }
   
-  .login-box input {
+  .login-box input, select {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
@@ -110,4 +120,7 @@
     font-size: 13px;
   }
 
-  
+  .user-name {
+    display: flex;
+    gap: 10px;
+  }
